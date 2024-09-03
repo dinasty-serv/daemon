@@ -1,0 +1,18 @@
+language: node_js
+node_js:
+  - "8"
+  - "7"
+  - "6"
+env:
+  - CXX=g++-4.8
+cache:
+  directories:
+    - $HOME/.npm
+addons:
+  apt:
+    sources:
+      - ubuntu-toolchain-r-test
+    packages:
+      - g++-4.8
+notifications:
+  email: false

@@ -1,0 +1,5 @@
+# Ignore JSON Files
+**/*.json
+
+src/services/**/*.js
+node_modules

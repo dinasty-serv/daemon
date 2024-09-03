@@ -1,0 +1,38 @@
+{
+  "web": {
+    "host": "0.0.0.0",
+    "listen": 8080,
+    "ssl": {
+      "enabled": false,
+      "certificate": "/etc/letsencrypt/live/minecraft01.dinasty-serv.com/fullchain.pem",
+      "key": "/etc/letsencrypt/live/minecraft01.dinasty-serv.com/privkey.pem"
+    }
+  },
+  "docker": {
+    "socket": "/var/run/docker.sock",
+    "autoupdate_images": true,
+    "interface": "172.18.0.1",
+    "timezone_path": "/etc/timezone"
+  },
+  "sftp": {
+    "path": "/home/",
+    "port": 2022,
+    "container": "fe5d7cbb27e4a44e22f769ada241a9364297b6e873ca8993acb225ca86635672"
+  },
+  "logger": {
+    "path": "logs/",
+    "src": false,
+    "level": "info",
+    "period": "1d",
+    "count": 3
+  },
+  "remote": {
+    "base": "http://developpement.dinasty-serv.com/app_dev.php/apiV1"
+  },
+  "uploads": {
+    "size_limit": 100
+  },
+  "keys": [
+    "6G8uEsRJjV3wkFMSjWCw"
+  ]
+}
